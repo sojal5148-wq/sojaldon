@@ -1,8 +1,20 @@
 #include<iostream>
 using namespace std;
 
-int main(){
-  cout<<"Hello World";
- 
-return 0;
+int main() {
+    int arr[5];
+    int n = 5;
+
+    for(int i = 0; i < n; i++) {
+        cout << "Enter element " << i + 1 << ": ";
+        cin >> arr[i];
+    }
+
+    cout << "Array elements are: ";
+
+    for(int i = 0; i < n; i++) {
+        cout << arr[i] << " ";
+    }
+
+    return 0;
 }
